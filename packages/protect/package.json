@@ -8,7 +8,6 @@
     "lib",
     "dist"
   ],
-  "license": "MIT",
   "scripts": {},
   "keywords": [
     "chatbot",

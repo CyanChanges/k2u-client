@@ -8,7 +8,9 @@
     "lib",
     "dist"
   ],
-  "license": "MIT",
+  "koishi": {
+    "preview": true
+  },
   "scripts": {},
   "keywords": [
     "chatbot",
