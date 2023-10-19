@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "koishi-plugin-k2u-*": [
+        "packages/*/src"
+      ],
+      "koishi-plugin-*": [
+        "packages/*/src"
+      ]
+    }
+  }
+}

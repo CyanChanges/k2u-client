@@ -1,0 +1,37 @@
+{
+  "name": "@k2u/core",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "external/*",
+    "external/*/external/*",
+    "external/*/packages/*",
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "yakumo build",
+    "bump": "yakumo version",
+    "dep": "yakumo upgrade",
+    "pub": "yakumo publish"
+  },
+  "devDependencies": {
+    "@koishijs/client": "^5.16.1",
+    "@koishijs/plugin-hmr": "^1.2.2",
+    "@koishijs/scripts": "^4.5.0",
+    "@types/node": "^20.8.7",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.18.20",
+    "esbuild-register": "npm:@shigma/esbuild-register@^1.1.1",
+    "typescript": "<5.2.0",
+    "yakumo": "^0.3.13",
+    "yakumo-esbuild": "^0.3.25",
+    "yakumo-esbuild-yaml": "^0.3.1",
+    "yakumo-publish": "^0.3.4",
+    "yakumo-publish-sync": "^0.3.3",
+    "yakumo-tsc": "^0.3.12",
+    "yakumo-upgrade": "^0.3.4",
+    "yakumo-version": "^0.3.4",
+    "yml-register": "^1.1.0"
+  }
+}
