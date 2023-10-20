@@ -1,4 +1,4 @@
-import {Context, Logger, Schema, Service} from 'koishi'
+import { Awaitable, Context, Logger, Service } from 'koishi'
 
 declare module 'koishi' {
   interface Context {
@@ -9,10 +9,14 @@ declare module 'koishi' {
 export abstract class K2Protect extends Service {
   protected logger: Logger
 
-  constructor(protected ctx: Context) {
+  protected constructor(protected ctx: Context) {
     super(ctx, 'k2u.protect');
     this.logger = ctx.logger('k2u.protect')
+
+
   }
+
+  abstract loop(): Awaitable<void>
 
   abstract checkThrow(ctx: Context, immediate: boolean): false | never
 

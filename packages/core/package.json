@@ -1,6 +1,6 @@
 {
-  "name": "koishi-plugin-k2u",
-  "description": "k2utils",
+  "name": "@k2u/core",
+  "description": "k2utils - core",
   "version": "0.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -10,7 +10,6 @@
   ],
   "scripts": {},
   "keywords": [
-    "chatbot",
     "koishi",
     "plugin"
   ],

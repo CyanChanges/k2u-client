@@ -1,9 +1,10 @@
-import {Context, defineProperty, resolveConfig, Service} from 'koishi'
+import { Context, defineProperty, resolveConfig, Service } from 'koishi'
 import * as cordis from 'cordis'
-import {GetEvents, Parameters, ReturnType, ThisType, isBailed} from "cordis";
-import {Promisify} from "cosmokit";
-import {IsolatedPlugin, IsolatedContext} from "./isolated";
+import { GetEvents, Parameters, ReturnType, ThisType, isBailed } from "cordis";
+import { Promisify } from "cosmokit";
+import { IsolatedPlugin, IsolatedContext } from "./isolated";
 import * as isolatedCordis from 'cordis2'
+// import * as isolatedCordis from 'cordis'
 
 export const name = 'keine'
 
@@ -42,7 +43,7 @@ declare module 'koishi' {
 }
 
 export class Keine extends Service {
-  private ictx: isolatedCordis.Context
+  private readonly ictx: isolatedCordis.Context
 
   static isolated = Symbol('isolated')
 
@@ -219,7 +220,7 @@ export class Keine extends Service {
   }
 
   unregister(hooks: [cordis.Context, ((...args: any[]) => any)][], listener: any) {
-    const index = hooks.findIndex(([context, callback]) => callback === listener)
+    const index = hooks.findIndex(([, callback]) => callback === listener)
     if (index >= 0) {
       hooks.splice(index, 1)
       return true
