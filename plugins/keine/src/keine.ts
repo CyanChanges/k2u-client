@@ -90,7 +90,7 @@ export class Keine extends Service {
 
     // const self = this
 
-    await this.ictx.runtime.start()
+    this.ictx.runtime.start()
 
     // this.ictx.registry = this.registry = new isolatedCordis.Registry(this.ictx, {})
   }
