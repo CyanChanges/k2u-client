@@ -1,5 +1,5 @@
 {
-  "name": "@k2u/core",
+  "name": "@root/k2u",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -8,7 +8,6 @@
     "external/*/packages/*",
     "packages/*"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "yakumo build",
     "bump": "yakumo version",

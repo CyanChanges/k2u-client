@@ -8,7 +8,6 @@
     "lib",
     "dist"
   ],
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",

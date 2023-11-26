@@ -1,6 +1,6 @@
 {
-  "name": "@k2u/koishi-plugin-ui",
-  "description": "UI for k2u",
+  "name": "@k2u/ui",
+  "description": "k2u - ui",
   "version": "0.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -8,14 +8,14 @@
     "lib",
     "dist"
   ],
-  "license": "MIT",
-  "scripts": {},
+  "license": "GPL-3.0",
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
   "peerDependencies": {
+    "@koishijs/console": "^5.16.1",
     "koishi": "^4.15.1"
   }
 }

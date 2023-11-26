@@ -1,5 +1,5 @@
 {
-  "name": "@k2u/provides",
+  "name": "@k2u/utils",
   "description": "k2utils - provide utils",
   "version": "0.0.1",
   "main": "lib/index.js",
@@ -8,7 +8,6 @@
     "lib",
     "dist"
   ],
-  "scripts": {},
   "keywords": [
     "koishi",
     "plugin"
